@@ -15,7 +15,7 @@ Usage
 
 Start a new container with a volume for your config files
 
-    docker run --name profittrailer -d -v "$( pwd )/mybot:/app/ProfitTrailer" gdomod/profit-trailer
+    docker run -d --restart=always --name=profittrailer -p 0.0.0.0:8081:8081 -v /physicalpath/profittrailer:/app/ProfitTrailer gdomod/profit-trailer
 
 If u want to update Profittrailer , just delete Profittrailer in mounted path and docker restart profittrailer
 
