@@ -13,12 +13,17 @@ For more information about ProfitTrailer :
 Usage
 -----
 
-Start a new container with a volume for your config files
+COPY your *.properties in your PHYSICAL MOUNT PATH
 
-    docker run -d --restart=always --name=profittrailer -p 0.0.0.0:8081:8081 -v /physicalpath/profittrailer:/app/ProfitTrailer gdomod/profit-trailer
+then start a new container with a volume for your config files
+
+    docker run -d --restart=always --name=profittrailer -p 0.0.0.0:8081:8081 \
+    -v /physicalpath/profittrailer:/app/ProfitTrailer gdomod/profit-trailer
 
 If u want to update Profittrailer , just delete Profittrailer in mounted path and docker restart profittrailer
 
+u can debug with `docker logs profittrailer -f`
+u can restart with `docker restart profittrailer`
 [![Docker Stars](https://img.shields.io/docker/stars/gdomod/profit-trailer.svg)](https://hub.docker.com/r/gdomod/profit-trailer/)
 [![Docker Pulls](https://img.shields.io/docker/pulls/gdomod/profit-trailer.svg)](https://hub.docker.com/r/gdomod/profit-trailer/)
 
