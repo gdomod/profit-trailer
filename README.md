@@ -15,10 +15,12 @@ Usage
 
 Start a new container with a volume for your config files
 
-    docker run -d -v "$( pwd )/mybot:/app/ProfitTrailer" rafffael/profit-trailer
+    docker run --name profittrailer -d -v "$( pwd )/mybot:/app/ProfitTrailer" gdomod/profit-trailer
 
-[![Docker Stars](https://img.shields.io/docker/stars/rafffael/profit-trailer.svg)](https://hub.docker.com/r/rafffael/profit-trailer/)
-[![Docker Pulls](https://img.shields.io/docker/pulls/rafffael/profit-trailer.svg)](https://hub.docker.com/r/rafffael/profit-trailer/)
+If u want to update Profittrailer , just delete Profittrailer in mounted path and docker restart profittrailer
+
+[![Docker Stars](https://img.shields.io/docker/stars/gdomod/profit-trailer.svg)](https://hub.docker.com/r/gdomod/profit-trailer/)
+[![Docker Pulls](https://img.shields.io/docker/pulls/gdomod/profit-trailer.svg)](https://hub.docker.com/r/gdomod/profit-trailer/)
 
 Credit
 ------
