@@ -25,6 +25,10 @@ If u want to update Profittrailer , just delete Profittrailer.jar `rm /physicalp
 u can debug with `docker logs profittrailer -f`
 u can restart with `docker restart profittrailer`
 
+Credit
+------
+If u want to use different Port u need to change public port and private `-p 0.0.0.0:8083:8083` port in config.properties to same. 
+
 
 [![Docker Stars](https://img.shields.io/docker/stars/gdomod/profit-trailer.svg)](https://hub.docker.com/r/gdomod/profit-trailer/)
 [![Docker Pulls](https://img.shields.io/docker/pulls/gdomod/profit-trailer.svg)](https://hub.docker.com/r/gdomod/profit-trailer/)
